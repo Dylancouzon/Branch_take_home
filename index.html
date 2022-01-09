@@ -10,23 +10,27 @@
     branch.init('key_live_ke8sX93zNJPG1hoFQkgqemlgtyaVg353');
 
     var linkData = {
-  campaign: 'Journey integration',
-  channel: 'Web App',
+  campaign: 'content 123',
+  channel: 'facebook',
   feature: 'dashboard',
   stage: 'new user',
+  tags: [ 'tag1', 'tag2', 'tag3' ],
   alias: '',
   data: {
-    'time': Date.now(),
+    'custom_bool': true,
+    'custom_int': Date.now(),
     'custom_string': 'hello',
-    '$og_title': 'Web App link',
-    '$og_description': 'Description'
+    '$og_title': 'Title',
+    '$og_description': 'Description',
+    '$og_image_url':'http://lorempixel.com/400/400'
   }
 };
 
 branch.setBranchViewData(linkData);
+
   </script>
 </head>
 <body>
-Hello world
+
 </body>
 </html>
